@@ -1,0 +1,27 @@
+export const ErrorCode = {
+  Unauthorized: "UNAUTHORIZED",
+  TokenExpired: "TOKEN_EXPIRED",
+  MFARequired: "MFA_REQUIRED",
+  MissingPermissions: "MISSING_PERMISSIONS",
+  OwnerOnly: "OWNER_ONLY",
+  RoleHierarchy: "ROLE_HIERARCHY",
+  Banned: "BANNED",
+  UserTimedOut: "USER_TIMED_OUT",
+  ValidationError: "VALIDATION_ERROR",
+  PayloadTooLarge: "PAYLOAD_TOO_LARGE",
+  ImageDimensionsExceeded: "IMAGE_DIMENSIONS_EXCEEDED",
+  InvalidEmojiName: "INVALID_EMOJI_NAME",
+  NotFound: "NOT_FOUND",
+  UnknownChannel: "UNKNOWN_CHANNEL",
+  UnknownRole: "UNKNOWN_ROLE",
+  UnknownMessage: "UNKNOWN_MESSAGE",
+  UnknownInvite: "UNKNOWN_INVITE",
+  AlreadyExists: "ALREADY_EXISTS",
+  AlreadyMember: "ALREADY_MEMBER",
+  RateLimited: "RATE_LIMITED",
+  InternalError: "INTERNAL_ERROR",
+  SearchUnavailable: "SEARCH_UNAVAILABLE",
+  ServiceUnavailable: "SERVICE_UNAVAILABLE",
+} as const;
+
+export type ErrorCode = (typeof ErrorCode)[keyof typeof ErrorCode];
