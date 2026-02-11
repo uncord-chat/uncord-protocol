@@ -1,0 +1,36 @@
+name: Bug Report
+description: Report a mismatch, missing constant, or other issue.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear description of the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What the correct definition should be.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What the current definition is.
+    validations:
+      required: true
+  - type: dropdown
+    id: affected
+    attributes:
+      label: Affected language
+      options:
+        - Go
+        - TypeScript
+        - Both
+        - Unknown
+    validations:
+      required: true
