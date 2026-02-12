@@ -29,6 +29,7 @@ export const MentionEveryone = 1n << 22n;
 export const ManageMessages = 1n << 23n;
 export const ReadMessageHistory = 1n << 24n;
 export const UseCommands = 1n << 25n;
+export const UseExternalEmoji = 1n << 26n;
 
 // Voice (bits 27-35)
 export const VoiceConnect = 1n << 27n;

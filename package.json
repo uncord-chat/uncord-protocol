@@ -1,5 +1,6 @@
 {
   "name": "@uncord-chat/protocol",
+  "type": "module",
   "private": true,
   "devDependencies": {
     "@biomejs/biome": "^2.0.0"
@@ -7,6 +8,7 @@
   "scripts": {
     "fmt": "biome format --write .",
     "fmt:check": "biome check .",
-    "lint": "biome lint ."
+    "lint": "biome lint .",
+    "test": "node --test '**/*_test.ts'"
   }
 }

@@ -1,4 +1,4 @@
-.PHONY: fmt fmt-check lint fmt-go fmt-ts lint-ts
+.PHONY: fmt fmt-check lint test fmt-go fmt-ts lint-ts test-go test-ts
 
 # Format
 
@@ -17,6 +17,16 @@ lint: lint-ts
 
 lint-ts:
 	npx biome check .
+
+# Test
+
+test: test-go test-ts
+
+test-go:
+	go test -race ./...
+
+test-ts:
+	node --test '**/*_test.ts'
 
 # Check (CI)
 

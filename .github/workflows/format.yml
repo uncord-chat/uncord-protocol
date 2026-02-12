@@ -3,12 +3,15 @@ name: Format
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   format:
+    name: Format Check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,16 +22,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24"
 
-      - run: npm install
+      - run: npm ci
 
-      - name: Format Go
-        run: gofmt -w .
-
-      - name: Format TypeScript
-        run: npx biome format --write .
-
-      - uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: "style: auto-format"
+      - name: Check formatting
+        run: make fmt-check
