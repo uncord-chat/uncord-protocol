@@ -11,8 +11,8 @@ type Code string
 const (
 	// --- Authentication & Authorization ---
 
-	// Unauthorized indicates the request lacks valid authentication.
-	Unauthorized Code = "UNAUTHORIZED"
+	// Unauthorised indicates the request lacks valid authentication.
+	Unauthorised Code = "UNAUTHORISED"
 	// TokenExpired indicates the access token has expired.
 	TokenExpired Code = "TOKEN_EXPIRED"
 	// TokenReused indicates a refresh token was presented after it had

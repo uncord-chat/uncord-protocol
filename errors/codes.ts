@@ -1,7 +1,7 @@
 /** Machine-readable error codes returned in all Uncord API error responses. */
 export const ErrorCode = {
   // Authentication & Authorization
-  Unauthorized: "UNAUTHORIZED",
+  Unauthorised: "UNAUTHORISED",
   TokenExpired: "TOKEN_EXPIRED",
   TokenReused: "TOKEN_REUSED",
   InvalidCredentials: "INVALID_CREDENTIALS",
