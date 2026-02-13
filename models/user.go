@@ -5,8 +5,16 @@ package models
 
 // User represents the public user profile returned by the API.
 type User struct {
-	ID            string `json:"id"`
-	Email         string `json:"email"`
-	Username      string `json:"username"`
-	EmailVerified bool   `json:"email_verified"`
+	ID            string  `json:"id"`
+	Email         string  `json:"email"`
+	Username      string  `json:"username"`
+	DisplayName   *string `json:"display_name"`
+	AvatarKey     *string `json:"avatar_key"`
+	EmailVerified bool    `json:"email_verified"`
+}
+
+// UpdateUserRequest is the body for PATCH /api/v1/users/@me.
+type UpdateUserRequest struct {
+	DisplayName *string `json:"display_name"`
+	AvatarKey   *string `json:"avatar_key"`
 }
