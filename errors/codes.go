@@ -72,6 +72,15 @@ const (
 	UnknownMessage Code = "UNKNOWN_MESSAGE"
 	// UnknownInvite indicates the referenced invite does not exist.
 	UnknownInvite Code = "UNKNOWN_INVITE"
+	// UnknownCategory indicates the referenced category does not exist.
+	UnknownCategory Code = "UNKNOWN_CATEGORY"
+
+	// --- Limits ---
+
+	// MaxChannelsReached indicates the server has reached the maximum number of channels.
+	MaxChannelsReached Code = "MAX_CHANNELS_REACHED"
+	// MaxCategoriesReached indicates the server has reached the maximum number of categories.
+	MaxCategoriesReached Code = "MAX_CATEGORIES_REACHED"
 
 	// --- Conflict ---
 

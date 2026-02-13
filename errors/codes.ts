@@ -32,6 +32,11 @@ export const ErrorCode = {
   UnknownRole: "UNKNOWN_ROLE",
   UnknownMessage: "UNKNOWN_MESSAGE",
   UnknownInvite: "UNKNOWN_INVITE",
+  UnknownCategory: "UNKNOWN_CATEGORY",
+
+  // Limits
+  MaxChannelsReached: "MAX_CHANNELS_REACHED",
+  MaxCategoriesReached: "MAX_CATEGORIES_REACHED",
 
   // Conflict
   AlreadyExists: "ALREADY_EXISTS",
