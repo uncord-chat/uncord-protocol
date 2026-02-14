@@ -92,6 +92,8 @@ const (
 	MaxChannelsReached Code = "MAX_CHANNELS_REACHED"
 	// MaxCategoriesReached indicates the server has reached the maximum number of categories.
 	MaxCategoriesReached Code = "MAX_CATEGORIES_REACHED"
+	// MaxRolesReached indicates the server has reached the maximum number of roles.
+	MaxRolesReached Code = "MAX_ROLES_REACHED"
 
 	// --- Conflict ---
 
