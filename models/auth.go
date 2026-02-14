@@ -101,3 +101,9 @@ type MFARegenerateCodesResponse struct {
 type VerifyPasswordRequest struct {
 	Password string `json:"password"`
 }
+
+// DeleteAccountRequest is the JSON body for DELETE /api/v1/users/@me. The authenticated user's password is required to
+// confirm the irreversible account deletion.
+type DeleteAccountRequest struct {
+	Password string `json:"password"`
+}

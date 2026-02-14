@@ -40,6 +40,11 @@ const (
 	Banned Code = "BANNED"
 	// UserTimedOut indicates the user is currently timed out.
 	UserTimedOut Code = "USER_TIMED_OUT"
+	// AccountDeleted indicates registration is blocked because the email or username was previously used by a deleted
+	// account.
+	AccountDeleted Code = "ACCOUNT_DELETED"
+	// ServerOwner indicates the server owner must transfer ownership before performing this action.
+	ServerOwner Code = "SERVER_OWNER"
 
 	// --- Validation ---
 
