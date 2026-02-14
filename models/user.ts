@@ -5,6 +5,11 @@ export interface User {
   username: string;
   display_name: string | null;
   avatar_key: string | null;
+  pronouns: string | null;
+  banner_key: string | null;
+  about: string | null;
+  theme_colour_primary: number | null;
+  theme_colour_secondary: number | null;
   mfa_enabled: boolean;
   email_verified: boolean;
 }
@@ -13,4 +18,9 @@ export interface User {
 export interface UpdateUserRequest {
   display_name?: string | null;
   avatar_key?: string | null;
+  pronouns?: string | null;
+  banner_key?: string | null;
+  about?: string | null;
+  theme_colour_primary?: number | null;
+  theme_colour_secondary?: number | null;
 }

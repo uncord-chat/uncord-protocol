@@ -5,17 +5,27 @@ package models
 
 // User represents the public user profile returned by the API.
 type User struct {
-	ID            string  `json:"id"`
-	Email         string  `json:"email"`
-	Username      string  `json:"username"`
-	DisplayName   *string `json:"display_name"`
-	AvatarKey     *string `json:"avatar_key"`
-	MFAEnabled    bool    `json:"mfa_enabled"`
-	EmailVerified bool    `json:"email_verified"`
+	ID                   string  `json:"id"`
+	Email                string  `json:"email"`
+	Username             string  `json:"username"`
+	DisplayName          *string `json:"display_name"`
+	AvatarKey            *string `json:"avatar_key"`
+	Pronouns             *string `json:"pronouns"`
+	BannerKey            *string `json:"banner_key"`
+	About                *string `json:"about"`
+	ThemeColourPrimary   *int    `json:"theme_colour_primary"`
+	ThemeColourSecondary *int    `json:"theme_colour_secondary"`
+	MFAEnabled           bool    `json:"mfa_enabled"`
+	EmailVerified        bool    `json:"email_verified"`
 }
 
 // UpdateUserRequest is the body for PATCH /api/v1/users/@me.
 type UpdateUserRequest struct {
-	DisplayName *string `json:"display_name"`
-	AvatarKey   *string `json:"avatar_key"`
+	DisplayName          *string `json:"display_name"`
+	AvatarKey            *string `json:"avatar_key"`
+	Pronouns             *string `json:"pronouns"`
+	BannerKey            *string `json:"banner_key"`
+	About                *string `json:"about"`
+	ThemeColourPrimary   *int    `json:"theme_colour_primary"`
+	ThemeColourSecondary *int    `json:"theme_colour_secondary"`
 }
