@@ -24,6 +24,12 @@ const (
 	InvalidToken Code = "INVALID_TOKEN"
 	// MFARequired indicates the account requires multi-factor authentication.
 	MFARequired Code = "MFA_REQUIRED"
+	// InvalidMFACode indicates the provided MFA code is incorrect.
+	InvalidMFACode Code = "INVALID_MFA_CODE"
+	// MFANotEnabled indicates MFA is not enabled on the account.
+	MFANotEnabled Code = "MFA_NOT_ENABLED"
+	// MFAAlreadyEnabled indicates MFA is already enabled on the account.
+	MFAAlreadyEnabled Code = "MFA_ALREADY_ENABLED"
 	// MissingPermissions indicates the user lacks a required permission.
 	MissingPermissions Code = "MISSING_PERMISSIONS"
 	// OwnerOnly indicates the action is restricted to the server owner.

@@ -10,6 +10,7 @@ type User struct {
 	Username      string  `json:"username"`
 	DisplayName   *string `json:"display_name"`
 	AvatarKey     *string `json:"avatar_key"`
+	MFAEnabled    bool    `json:"mfa_enabled"`
 	EmailVerified bool    `json:"email_verified"`
 }
 
