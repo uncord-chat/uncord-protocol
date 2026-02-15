@@ -1,5 +1,12 @@
 package models
 
+// Member status constants matching the database CHECK constraint.
+const (
+	MemberStatusPending  = "pending"
+	MemberStatusActive   = "active"
+	MemberStatusTimedOut = "timed_out"
+)
+
 // MemberUser is the subset of user fields exposed in member listings and gateway events.
 type MemberUser struct {
 	ID          string  `json:"id"`

@@ -1,3 +1,13 @@
+/** Channel type constants matching the database CHECK constraint. */
+export const ChannelType = {
+  Text: "text",
+  Voice: "voice",
+  Announcement: "announcement",
+  Forum: "forum",
+  Stage: "stage",
+} as const;
+export type ChannelType = (typeof ChannelType)[keyof typeof ChannelType];
+
 /** Channel returned by the API. */
 export interface Channel {
   id: string;

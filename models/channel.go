@@ -1,5 +1,14 @@
 package models
 
+// Channel type constants matching the database CHECK constraint.
+const (
+	ChannelTypeText         = "text"
+	ChannelTypeVoice        = "voice"
+	ChannelTypeAnnouncement = "announcement"
+	ChannelTypeForum        = "forum"
+	ChannelTypeStage        = "stage"
+)
+
 // Channel represents a channel returned by the API.
 type Channel struct {
 	ID              string  `json:"id"`

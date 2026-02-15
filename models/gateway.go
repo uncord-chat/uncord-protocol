@@ -30,3 +30,10 @@ type ReadyData struct {
 	Roles     []Role       `json:"roles"`
 	Members   []Member     `json:"members"`
 }
+
+// MessageDeleteData is the payload for the MESSAGE_DELETE dispatch event, identifying the deleted message and the
+// channel it belonged to.
+type MessageDeleteData struct {
+	ID        string `json:"id"`
+	ChannelID string `json:"channel_id"`
+}

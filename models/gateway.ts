@@ -1,0 +1,38 @@
+import type { Channel } from "./channel";
+import type { Member } from "./member";
+import type { Role } from "./role";
+import type { ServerConfig } from "./server";
+import type { User } from "./user";
+
+/** Payload for opcode 10 (Hello), sent by the server on connection. */
+export interface HelloData {
+  heartbeat_interval: number;
+}
+
+/** Payload for opcode 2 (Identify), sent by the client to authenticate. */
+export interface IdentifyData {
+  token: string;
+}
+
+/** Payload for opcode 6 (Resume), sent by the client to restore a session. */
+export interface ResumeData {
+  token: string;
+  session_id: string;
+  seq: number;
+}
+
+/** Payload for the READY dispatch event, containing initial client state. */
+export interface ReadyData {
+  session_id: string;
+  user: User;
+  server: ServerConfig;
+  channels: Channel[];
+  roles: Role[];
+  members: Member[];
+}
+
+/** Payload for the MESSAGE_DELETE dispatch event. */
+export interface MessageDeleteData {
+  id: string;
+  channel_id: string;
+}

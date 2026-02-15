@@ -1,3 +1,11 @@
+/** Member status constants matching the database CHECK constraint. */
+export const MemberStatus = {
+  Pending: "pending",
+  Active: "active",
+  TimedOut: "timed_out",
+} as const;
+export type MemberStatus = (typeof MemberStatus)[keyof typeof MemberStatus];
+
 /** Subset of user fields exposed in member listings and gateway events. */
 export interface MemberUser {
   id: string;
