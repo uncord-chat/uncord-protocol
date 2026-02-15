@@ -87,6 +87,10 @@ const (
 	UnknownCategory Code = "UNKNOWN_CATEGORY"
 	// UnknownOverride indicates the referenced permission override does not exist.
 	UnknownOverride Code = "UNKNOWN_OVERRIDE"
+	// UnknownMember indicates the referenced member does not exist.
+	UnknownMember Code = "UNKNOWN_MEMBER"
+	// UnknownBan indicates the referenced ban does not exist.
+	UnknownBan Code = "UNKNOWN_BAN"
 
 	// --- Limits ---
 

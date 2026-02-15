@@ -39,6 +39,8 @@ export const ErrorCode = {
   UnknownInvite: "UNKNOWN_INVITE",
   UnknownCategory: "UNKNOWN_CATEGORY",
   UnknownOverride: "UNKNOWN_OVERRIDE",
+  UnknownMember: "UNKNOWN_MEMBER",
+  UnknownBan: "UNKNOWN_BAN",
 
   // Limits
   MaxChannelsReached: "MAX_CHANNELS_REACHED",
