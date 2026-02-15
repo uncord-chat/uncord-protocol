@@ -34,6 +34,7 @@ export const ErrorCode = {
 
   // Not Found
   NotFound: "NOT_FOUND",
+  UnknownUser: "UNKNOWN_USER",
   UnknownChannel: "UNKNOWN_CHANNEL",
   UnknownRole: "UNKNOWN_ROLE",
   UnknownMessage: "UNKNOWN_MESSAGE",

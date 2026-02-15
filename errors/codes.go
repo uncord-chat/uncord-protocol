@@ -77,6 +77,8 @@ const (
 
 	// NotFound indicates the requested resource does not exist.
 	NotFound Code = "NOT_FOUND"
+	// UnknownUser indicates the referenced user does not exist.
+	UnknownUser Code = "UNKNOWN_USER"
 	// UnknownChannel indicates the referenced channel does not exist.
 	UnknownChannel Code = "UNKNOWN_CHANNEL"
 	// UnknownRole indicates the referenced role does not exist.
