@@ -10,6 +10,13 @@ export interface ServerConfig {
   updated_at: string;
 }
 
+/** Unauthenticated subset of server identity returned by GET /api/v1/server/info. */
+export interface PublicServerInfo {
+  name: string;
+  description: string;
+  icon_key: string | null;
+}
+
 /** Body for PATCH /api/v1/server. */
 export interface UpdateServerConfigRequest {
   name?: string | null;

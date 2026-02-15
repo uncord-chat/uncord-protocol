@@ -12,6 +12,13 @@ type ServerConfig struct {
 	UpdatedAt   string  `json:"updated_at"`
 }
 
+// PublicServerInfo is the unauthenticated subset of server identity returned by GET /api/v1/server/info.
+type PublicServerInfo struct {
+	Name        string  `json:"name"`
+	Description string  `json:"description"`
+	IconKey     *string `json:"icon_key"`
+}
+
 // UpdateServerConfigRequest is the body for PATCH /api/v1/server.
 type UpdateServerConfigRequest struct {
 	Name        *string `json:"name"`
