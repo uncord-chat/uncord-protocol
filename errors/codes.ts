@@ -26,6 +26,7 @@ export const ErrorCode = {
   DisposableEmail: "DISPOSABLE_EMAIL",
   ValidationError: "VALIDATION_ERROR",
   PayloadTooLarge: "PAYLOAD_TOO_LARGE",
+  UnsupportedContentType: "UNSUPPORTED_CONTENT_TYPE",
   ImageDimensionsExceeded: "IMAGE_DIMENSIONS_EXCEEDED",
   InvalidEmojiName: "INVALID_EMOJI_NAME",
   MissingChannelID: "MISSING_CHANNEL_ID",
@@ -41,6 +42,7 @@ export const ErrorCode = {
   UnknownOverride: "UNKNOWN_OVERRIDE",
   UnknownMember: "UNKNOWN_MEMBER",
   UnknownBan: "UNKNOWN_BAN",
+  UnknownAttachment: "UNKNOWN_ATTACHMENT",
 
   // Limits
   MaxChannelsReached: "MAX_CHANNELS_REACHED",

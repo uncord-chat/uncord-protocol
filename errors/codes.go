@@ -62,6 +62,8 @@ const (
 	ValidationError Code = "VALIDATION_ERROR"
 	// PayloadTooLarge indicates the request body exceeds the size limit.
 	PayloadTooLarge Code = "PAYLOAD_TOO_LARGE"
+	// UnsupportedContentType indicates the uploaded file type is not allowed.
+	UnsupportedContentType Code = "UNSUPPORTED_CONTENT_TYPE"
 	// ImageDimensionsExceeded indicates the image exceeds dimension limits.
 	ImageDimensionsExceeded Code = "IMAGE_DIMENSIONS_EXCEEDED"
 	// InvalidEmojiName indicates the emoji name is invalid.
@@ -91,6 +93,8 @@ const (
 	UnknownMember Code = "UNKNOWN_MEMBER"
 	// UnknownBan indicates the referenced ban does not exist.
 	UnknownBan Code = "UNKNOWN_BAN"
+	// UnknownAttachment indicates one or more referenced attachment IDs do not exist or are not available for linking.
+	UnknownAttachment Code = "UNKNOWN_ATTACHMENT"
 
 	// --- Limits ---
 
