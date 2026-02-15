@@ -85,6 +85,8 @@ const (
 	UnknownInvite Code = "UNKNOWN_INVITE"
 	// UnknownCategory indicates the referenced category does not exist.
 	UnknownCategory Code = "UNKNOWN_CATEGORY"
+	// UnknownOverride indicates the referenced permission override does not exist.
+	UnknownOverride Code = "UNKNOWN_OVERRIDE"
 
 	// --- Limits ---
 

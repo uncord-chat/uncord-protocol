@@ -36,6 +36,7 @@ export const ErrorCode = {
   UnknownMessage: "UNKNOWN_MESSAGE",
   UnknownInvite: "UNKNOWN_INVITE",
   UnknownCategory: "UNKNOWN_CATEGORY",
+  UnknownOverride: "UNKNOWN_OVERRIDE",
 
   // Limits
   MaxChannelsReached: "MAX_CHANNELS_REACHED",
