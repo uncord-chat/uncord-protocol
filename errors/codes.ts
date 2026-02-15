@@ -15,6 +15,8 @@ export const ErrorCode = {
   RoleHierarchy: "ROLE_HIERARCHY",
   Banned: "BANNED",
   UserTimedOut: "USER_TIMED_OUT",
+  AccountDeleted: "ACCOUNT_DELETED",
+  ServerOwner: "SERVER_OWNER",
 
   // Validation
   InvalidBody: "INVALID_BODY",
@@ -41,6 +43,7 @@ export const ErrorCode = {
   // Limits
   MaxChannelsReached: "MAX_CHANNELS_REACHED",
   MaxCategoriesReached: "MAX_CATEGORIES_REACHED",
+  MaxRolesReached: "MAX_ROLES_REACHED",
 
   // Conflict
   AlreadyExists: "ALREADY_EXISTS",

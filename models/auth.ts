@@ -89,3 +89,13 @@ export interface MFARegenerateCodesRequest {
 export interface MFARegenerateCodesResponse {
   recovery_codes: string[];
 }
+
+/** JSON body for POST /api/v1/auth/verify-password. */
+export interface VerifyPasswordRequest {
+  password: string;
+}
+
+/** JSON body for DELETE /api/v1/users/@me. */
+export interface DeleteAccountRequest {
+  password: string;
+}
