@@ -37,3 +37,18 @@ type MessageDeleteData struct {
 	ID        string `json:"id"`
 	ChannelID string `json:"channel_id"`
 }
+
+// ChannelDeleteData is the payload for the CHANNEL_DELETE dispatch event, identifying the deleted channel.
+type ChannelDeleteData struct {
+	ID string `json:"id"`
+}
+
+// RoleDeleteData is the payload for the ROLE_DELETE dispatch event, identifying the deleted role.
+type RoleDeleteData struct {
+	ID string `json:"id"`
+}
+
+// MemberRemoveData is the payload for the MEMBER_REMOVE dispatch event, identifying the removed member.
+type MemberRemoveData struct {
+	UserID string `json:"user_id"`
+}

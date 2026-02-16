@@ -45,6 +45,10 @@ const (
 	AccountDeleted Code = "ACCOUNT_DELETED"
 	// ServerOwner indicates the server owner must transfer ownership before performing this action.
 	ServerOwner Code = "SERVER_OWNER"
+	// EmailNotVerified indicates the user must verify their email address before accessing the server.
+	EmailNotVerified Code = "EMAIL_NOT_VERIFIED"
+	// MembershipRequired indicates the user must complete server onboarding before performing this action.
+	MembershipRequired Code = "MEMBERSHIP_REQUIRED"
 
 	// --- Validation ---
 

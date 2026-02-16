@@ -36,3 +36,18 @@ export interface MessageDeleteData {
   id: string;
   channel_id: string;
 }
+
+/** Payload for the CHANNEL_DELETE dispatch event. */
+export interface ChannelDeleteData {
+  id: string;
+}
+
+/** Payload for the ROLE_DELETE dispatch event. */
+export interface RoleDeleteData {
+  id: string;
+}
+
+/** Payload for the MEMBER_REMOVE dispatch event. */
+export interface MemberRemoveData {
+  user_id: string;
+}
