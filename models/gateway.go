@@ -20,15 +20,40 @@ type ResumeData struct {
 	Seq       int64  `json:"seq"`
 }
 
+// PresenceUpdateRequest is the payload for opcode 3 (PresenceUpdate), sent by the client to set its own online status.
+type PresenceUpdateRequest struct {
+	Status string `json:"status"`
+}
+
+// PresenceUpdateData is the payload for the PRESENCE_UPDATE dispatch event, broadcast when a user's presence changes.
+type PresenceUpdateData struct {
+	UserID string `json:"user_id"`
+	Status string `json:"status"`
+}
+
+// PresenceState is a snapshot of a single user's presence, included in the READY payload.
+type PresenceState struct {
+	UserID string `json:"user_id"`
+	Status string `json:"status"`
+}
+
+// TypingStartData is the payload for the TYPING_START dispatch event.
+type TypingStartData struct {
+	ChannelID string `json:"channel_id"`
+	UserID    string `json:"user_id"`
+	Timestamp string `json:"timestamp"`
+}
+
 // ReadyData is the payload for the READY dispatch event (opcode 0, type "READY"), sent after a successful Identify.
 // It contains the initial state the client needs to populate its local cache.
 type ReadyData struct {
-	SessionID string       `json:"session_id"`
-	User      User         `json:"user"`
-	Server    ServerConfig `json:"server"`
-	Channels  []Channel    `json:"channels"`
-	Roles     []Role       `json:"roles"`
-	Members   []Member     `json:"members"`
+	SessionID string          `json:"session_id"`
+	User      User            `json:"user"`
+	Server    ServerConfig    `json:"server"`
+	Channels  []Channel       `json:"channels"`
+	Roles     []Role          `json:"roles"`
+	Members   []Member        `json:"members"`
+	Presences []PresenceState `json:"presences"`
 }
 
 // MessageDeleteData is the payload for the MESSAGE_DELETE dispatch event, identifying the deleted message and the

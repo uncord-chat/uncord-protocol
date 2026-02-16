@@ -14,6 +14,8 @@ const (
 	OpcodeHeartbeat Opcode = 1
 	// OpcodeIdentify authenticates a new connection (client → server).
 	OpcodeIdentify Opcode = 2
+	// OpcodePresenceUpdate sets the client's presence status (client → server).
+	OpcodePresenceUpdate Opcode = 3
 	// OpcodeResume resumes a dropped session (client → server).
 	OpcodeResume Opcode = 6
 	// OpcodeReconnect asks the client to reconnect (server → client).
